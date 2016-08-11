@@ -1,0 +1,22 @@
+<div class='email'>
+	<div class="list-group">
+		<p>{{email.message.from}}</p>
+		<p>{{email.message.date | date: 'dd/MM/yyyy' }}</p>
+		<p>{{email.message.subject}}</p>
+		
+	</div>
+	<div>
+		<a href="" class="btn btn-primary" ng-click="reply = !reply;">
+			Reply
+		</a>
+		<a class="btn btn-primary" href="/#/inbox" >
+		Back
+		</a>
+	</div>
+	<div ng-bind-html="email.message.content"></div>
+	
+	<div ng-show="reply">
+		<textarea ng-model="response" class="email__response-text" placeholder="Enter a reply"></textarea>
+		<a href="" class="btn btn-primary" ng-click="email.reply(response);">Send</a>
+	</div>
+</div>

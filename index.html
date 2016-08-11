@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="EmailApp">
+<head>
+	<meta charset="utf-8">
+	<title>My AngularJS Email App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+				<h1>My AngularJS Email App</h1>
+			  	<p>This is a simple Email App using AngularJS</p>
+			  	<p><a class="btn btn-primary btn-lg" href="http://lanyangua.herokuapp.com/" role="button">About Me</a></p>
+			</div>
+		</div>
+	</div>
+	
+
+    <main>
+      <div ng-view></div>
+    </main>
+
+	<!-- libraries-->
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.8/angular-sanitize.js"></script>
+	<!-- <script src="js/ui-bootstrap-tpls-2.0.1.min.js"></script> -->
+	<script src="js/app.js"></script>
+	<script src="js/controllers/EmailCtrl.js"></script>
+	<script src="js/controllers/InboxCtrl.js"></script>
+	<script src="js/factories/EmailFactory.js"></script>
+	<script src="js/factories/InboxFactory.js"></script>
+	<script src="js/directives/EmailDrctv.js"></script>
+	<script src="js/directives/InboxDrctv.js"></script>
+</body>
+</html>
